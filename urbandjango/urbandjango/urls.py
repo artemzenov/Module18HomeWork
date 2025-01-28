@@ -18,9 +18,15 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import index
 from task2.views import Index
+from task3.views import main_page
+from task3.views import shop
+from task3.views import cart
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index1', index),
-    path('index2', Index.as_view())
+    path('index2', Index.as_view(),),
+    path('platform', main_page),
+    path('platform/shop', shop),
+    path('platform/cart', cart)
 ]

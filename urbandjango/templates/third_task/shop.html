@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{name_page}}</title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <ul>
+        {% for game in games %}
+            <li>{{game}}<button>Купить</button></li>
+        {% endfor %}
+    </ul>
+    <button onclick="location.href='//127.0.0.1:8000/platform'">Вернуться обратно</button>
+</body>
+</html>

@@ -55,7 +55,10 @@ ROOT_URLCONF = 'urbandjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/'templates/second_task'],
+        'DIRS': [
+            BASE_DIR/'templates/second_task',
+            BASE_DIR/'templates/third_task'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
