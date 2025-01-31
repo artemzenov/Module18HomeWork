@@ -58,7 +58,8 @@ TEMPLATES = [
         'DIRS': [
             BASE_DIR/'templates/second_task',
             # BASE_DIR/'templates/third_task',
-            BASE_DIR/'templates/fourth_task'
+            BASE_DIR/'templates/fourth_task',
+            BASE_DIR/'templates/fifth_task'
         ],
         'APP_DIRS': True,
         'OPTIONS': {

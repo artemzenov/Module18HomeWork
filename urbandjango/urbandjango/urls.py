@@ -24,6 +24,8 @@ from task2.views import Index
 from task4.views import main_page
 from task4.views import shop
 from task4.views import cart
+from task5.views import sign_up_by_html
+from task5.views import sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,5 +33,7 @@ urlpatterns = [
     path('index2', Index.as_view(),),
     path('platform', main_page),
     path('platform/shop', shop),
-    path('platform/cart', cart)
+    path('platform/cart', cart),
+    path('', sign_up_by_html),
+    path('django_sign_up', sign_up_by_django)
 ]
